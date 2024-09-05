@@ -1,0 +1,16 @@
+<!-- Behavior tree that sequentially navigates locations naively -->
+<root main_tree_to_execute = "MainTree" >
+  <BehaviorTree ID="MainTree">
+    <Sequence name="sequence1">
+      <Sequence name="sequence1.1">
+        <GoToPose name="go_to_location1" loc="location1" />
+        <GoToPose name="go_to_location2" loc="location2" />
+        <GoToPose name="go_to_location3" loc="location3" />
+        <GoToPose name="go_to_location4" loc="location4" />
+      </Sequence>
+      <Sequence name="sequence1.2">
+        <StopRobot name="stop_robot" />
+      </Sequence>
+    </Sequence>
+  </BehaviorTree>
+</root>

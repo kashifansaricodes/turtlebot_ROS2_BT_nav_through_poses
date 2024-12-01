@@ -3,7 +3,16 @@
 ## Video deomnstration: (https://drive.google.com/file/d/1tbknKB4ixVPEkprCjwKfoI04seEsBDbU/view?usp=sharing)
 
 
-1. Import TurtleBot3 packages with vcs <<< !!!
+0. Install Dependencies
+```
+sudo apt-get install libzmq3-dev libboost-dev
+
+pip3 install transforms3d
+
+```
+
+
+2. Import TurtleBot3 packages with vcs <<< !!!
 ```
 vcs import . < turtlebot3.repos
 ```
